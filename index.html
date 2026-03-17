@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Singh Ujjain | Web Developer, Designer & AI Solutions</title>
+    <meta name="description" content="Vedant Singh Ujjain is a web developer, graphic designer, and AI chatbot developer from Dhanbad, Jharkhand. Explore services, skills, projects, and contact details.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Vedant Singh Ujjain">
+    <meta name="theme-color" content="#0f0f17">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vedant Singh Ujjain | Web Developer, Designer & AI Solutions">
+    <meta property="og:description" content="Portfolio of Vedant Singh Ujjain: web development, AI bots, graphic design, and digital services.">
+    <meta property="og:image" content="Images/hero-svg.svg">
+    <meta property="og:site_name" content="Vedant Singh Ujjain Portfolio">
+    <meta property="og:url" content="https://veddev.online/">
+    <link rel="canonical" href="https://veddev.online/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vedant Singh Ujjain | Web Developer, Designer & AI Solutions">
+    <meta name="twitter:description" content="Portfolio of Vedant Singh Ujjain with services, projects, and contact details.">
+    <meta name="twitter:image" content="Images/hero-svg.svg">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vedant Singh Ujjain",
+      "jobTitle": "Web Developer, Graphic Designer, and AI Chatbot Developer",
+      "email": "mailto:vedantsingh.meet@gmail.com",
+      "telephone": "+91 8252605943",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhanbad",
+        "addressRegion": "Jharkhand",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://instagram.com/Ved_Singh_1830",
+        "https://wa.me/918252605943"
+      ]
+    }
+    </script>
+</head>
+
+<body id="top">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="glass-navbar">
+        <div class="container nav-container">
+
+            <!-- Left Nav -->
+        <ul class="nav-left">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+
+        <!-- Center Logo -->
+        <div class="nav-logo">
+            <span class="logo-main">Welcome! Click Here</span>
+            <span class="logo-hover">Made By Vedant Singh Ujjain</span>
+        </div>
+
+        <!-- Right Nav -->
+        <ul class="nav-right">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="container hero-container">
+
+            <div class="hero-left">
+
+    <h4 class="intro-text">Hello, I'm</h4>
+
+    <h1 class="main-name">
+        Vedant Singh Ujjain
+    </h1>
+
+    <h2 class="animated-role">
+        Creative <span id="typing-text"></span>
+    </h2>
+
+    <p>
+        I build modern websites, AI bots and creative digital solutions
+        that help brands grow online.
+    </p>
+
+    <a href="#services" class="primary-btn">
+        My Services →
+    </a>
+
+</div>
+
+
+<script>
+const words = [
+    { text: "Web Developer", class: "type-blue" },
+    { text: "Graphic Designer", class: "type-red" },
+    { text: "Content Writer", class: "type-yellow" },
+    { text: "Chatbot Developer", class: "type-red" },
+    { text: "AI Engineer", class: "type-yellow" },
+    { text: "Apk Developer", class: "type-blue" }
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing-text");
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+    const fullText = currentWord.text;
+
+    typingElement.className = currentWord.class;
+
+    if (!isDeleting) {
+        typingElement.textContent = fullText.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === fullText.length) {
+            setTimeout(() => isDeleting = true, 1200);
+        }
+    } else {
+        typingElement.textContent = fullText.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 100);
+}
+
+typeEffect();
+</script>
+
+
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <img src="Images/hero-svg.svg" alt="Hero Image" class="hero-img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= WHY SECTION ================= -->
+  <section id="skills" class="skills-section reveal">
+    <div class="container">
+
+        <div class="skills-header">
+            <h2>SKILLS</h2>
+            <p>
+                A collection of my technical skills and expertise honed through various projects and experiences
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card blue-card">
+    <h3>Web Development</h3>
+
+    <div class="skill-items">
+
+        <div class="skill-pill">
+            <img src="Images/icons/html.svg" alt="">
+            <span>HTML</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/css.svg" alt="">
+            <span>CSS</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/js.svg" alt="">
+            <span>JavaScript</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/react.svg" alt="">
+            <span>React JS</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/nodejs.svg" alt="">
+            <span>Node JS</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/mongodb.svg" alt="">
+            <span>MongoDB</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/mysql.svg" alt="">
+            <span>MySQL</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/firebase.svg" alt="">
+            Firebase
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/flutter.svg" alt="">
+            Flutter
+        </div>
+
+    </div>
+</div>
+
+            <div class="skill-card red-card">
+    <h3>Languages</h3>
+
+    <div class="skill-items">
+
+        <div class="skill-pill">
+            <img src="Images/icons/c++.svg" alt="">
+            <span>C++</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/chash.svg" alt="">
+            <span>C#</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/python.svg" alt="">
+            <span>Python</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/php.svg" alt="">
+            <span>PHP</span>
+        </div>
+
+    </div>
+</div>
+
+            <div class="skill-card red-card">
+    <h3>Graphic Design</h3>
+
+    <div class="skill-items">
+
+        <div class="skill-pill">
+            <img src="Images/icons/photoshop.svg" alt="">
+            <span>Photoshop</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/canva.webp" alt="">
+            <span>Canva</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/figma.svg" alt="">
+            <span>Figma</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/coreldraw-icon.svg" alt="">
+            <span>CorelDraw</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/capcut.svg" alt="">
+            <span>CapCut</span>
+        </div>
+
+    </div>
+</div>
+
+           <div class="skill-card yellow-card">
+    <h3>Other Tools</h3>
+
+    <div class="skill-items">
+
+        <div class="skill-pill">
+            <img src="Images/icons/git.svg" alt="">
+            <span>Git</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/github.svg" alt="">
+            <span>GitHub</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/vscode.svg" alt="">
+            <span>VS Code</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/wordpress.svg" alt="">
+            <span>WordPress</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/chatgpt.svg" alt="">
+            <span>ChatGPT</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/gemini.svg" alt="">
+            <span>Gemini</span>
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/ai-bots.svg" alt="">
+            AI Bots
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/clawdbot.png" alt="">
+            Clawdbot
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/midjourney.svg" alt="">
+            Midjourney
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/telegram.svg" alt="">
+            Telegram Bots
+        </div>
+
+        <div class="skill-pill">
+            <img src="Images/icons/writing.svg" alt="">
+            Content Writing
+        </div>
+
+    </div>
+</div>
+</section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+<!-- ================= SERVICES SECTION ================= -->
+<section id="services" class="services-section reveal">
+    <div class="container">
+
+        <h2 class="services-title">
+            The Service We Provide<br>For You
+        </h2>
+
+        <div class="services-grid">
+
+            <!-- Development -->
+            <div class="service-card">
+                <div class="icon blue">
+                    <img src="Images/icons/development.svg" alt="Development">
+                </div>
+                <h3>Development</h3>
+                <p>Create a platform with the best and coolest quality from us.</p>
+            </div>
+
+            <!-- UI/UX -->
+            <div class="service-card">
+                <div class="icon red">
+                    <img src="Images/icons/uiux.svg" alt="UI UX">
+                </div>
+                <h3>UI/UX Designer</h3>
+                <p>We provide UI/UX Design services, and of course with the best quality.</p>
+            </div>
+
+            <!-- Graphic -->
+            <div class="service-card">
+                <div class="icon yellow">
+                    <img src="Images/icons/design.svg" alt="Graphic Design">
+                </div>
+                <h3>Graphic Designer</h3>
+                <p>We provide Graphic Design services, with the best designers.</p>
+            </div>
+
+            <!-- Motion -->
+            <div class="service-card">
+                <div class="icon yellow">
+                    <img src="Images/icons/motion.svg" alt="Motion Graphic">
+                </div>
+                <h3>Motion Graphic</h3>
+                <p>Create a platform with the best and coolest quality from us.</p>
+            </div>
+
+            <!-- Photography -->
+            <div class="service-card">
+                <div class="icon blue">
+                    <img src="Images/icons/photo.svg" alt="Photography">
+                </div>
+                <h3>Photography</h3>
+                <p>We provide Photography services, and of course with the best quality.</p>
+            </div>
+
+            <!-- Videography -->
+            <div class="service-card">
+                <div class="icon red">
+                    <img src="Images/icons/Editing.svg" alt="Videography">
+                </div>
+                <h3>Videography</h3>
+                <p>Create a platform with the best and coolest quality from us.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PORTFOLIO SECTION ================= -->
+<section id="projects" class="portfolio-section reveal">
+    <div class="container">
+
+        <div class="portfolio-header">
+            <h2>Our Awesome Portfolio</h2>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card first-card">
+                <img src="Images/portfolio/project1.png" alt="Project 1">
+            </div>
+
+            <div class="portfolio-card second-card">
+                <img src="Images/portfolio/project2.png" alt="Project 2">
+            </div>
+
+            <div class="portfolio-card third-card">
+                <img src="Images/portfolio/project3.png" alt="Project 3">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact-section reveal">
+    <div class="container">
+
+        <div class="contact-heading">
+            <h2>CONTACT</h2>
+            <p>I'd love to hear from you - reach out for any opportunities or questions!</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/vedantsingh.meet@gmail.com" method="POST">
+            <h3>Connect With Me 🚀</h3>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" class="contact-submit-btn">Send</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-links-grid">
+            <div class="contact-links-col contact-col-info">
+                <h4>Email</h4>
+                <a class="brand-gmail" href="mailto:vedantsingh.meet@gmail.com">
+                    vedantsingh.meet@gmail.com
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/gmail.svg" alt="Gmail Icon" class="contact-link-icon gmail-icon icon-default">
+                        <img src="Images/icons/contact/gmail-color.svg" alt="Gmail Color Icon" class="contact-link-icon icon-hover no-filter">
+                    </span>
+                </a>
+
+                <h4>Location</h4>
+                <p class="brand-india contact-static-row">
+                    <span>Dhanbad, Jharkhand, India</span>
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/location.svg" alt="Location Icon" class="contact-link-icon location-icon">
+                    </span>
+                </p>
+            </div>
+
+            <div class="contact-links-col contact-col-social">
+                <h4>Social Media</h4>
+                <a class="brand-linkedin" href="#" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/linkdin.svg" alt="LinkedIn Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-github" href="#" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/github.svg" alt="GitHub Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-instagram" href="https://instagram.com/Ved_Singh_1830" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/instagram.svg" alt="Instagram Icon" class="contact-link-icon icon-default">
+                        <img src="Images/icons/contact/instagram-color.svg" alt="Instagram Color Icon" class="contact-link-icon icon-hover no-filter">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-x" href="#" target="_blank" rel="noopener noreferrer">
+                    X (Twitter)
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/x.svg" alt="X Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="contact-links-col contact-col-talk">
+                <h4>Write Me & We'll Talk</h4>
+                <a class="brand-whatsapp" href="https://wa.me/918252605943" target="_blank" rel="noopener noreferrer">
+                    WhatsApp
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/whatsApp.svg" alt="WhatsApp Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-messenger" href="#" target="_blank" rel="noopener noreferrer">
+                    Messenger
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/messenger.svg" alt="Messenger Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-telegram" href="#" target="_blank" rel="noopener noreferrer">
+                    Telegram
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/telegram.svg" alt="Telegram Icon" class="contact-link-icon">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+                <a class="brand-instagram" href="https://instagram.com/Ved_Singh_1830" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                    <span class="contact-link-right">
+                        <img src="Images/icons/contact/instagram.svg" alt="Instagram Icon" class="contact-link-icon icon-default">
+                        <img src="Images/icons/contact/instagram-color.svg" alt="Instagram Color Icon" class="contact-link-icon icon-hover no-filter">
+                        <span class="link-arrow">&#8599;</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-container">
+
+        <div class="footer-left">
+            <h3>/. Dev With Ved</h3>
+        </div>
+
+        <div class="footer-center">
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+        </div>
+
+        <div class="footer-right">
+            © 2026 Enver. All Rights Reserved
+        </div>
+
+    </div>
+</footer>
+
+    <!-- ================= SCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
